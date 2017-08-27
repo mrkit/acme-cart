@@ -3,3 +3,12 @@ body, h1 {
   font-weight: 100;
 }
 
+main {
+  width: 1000px;
+  margin: auto;
+}
+
+#headerText {
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+}

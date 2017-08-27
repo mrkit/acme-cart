@@ -3,7 +3,8 @@ const
       nunjucks = require('nunjucks'),
       bodyParser = require('body-parser'),
       path = require('path'),
-      routes = require('./routes/orders');
+      routes = require('./routes/orders'),
+      db = require('./models/_db');
 
 const app = express();
 
@@ -26,4 +27,5 @@ app.use((err, req, res, next) => {
 const port = process.env.PORT || 3000;
 app.listen(port, ()=> {
   console.log(`listening on port ${port}`);
+  db.sync().catch(err => console.log(err.message));
 });
