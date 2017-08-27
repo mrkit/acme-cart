@@ -5,4 +5,4 @@ const Product = db.define('product', {
   name: Sequelize.STRING
 });
 
-module.exports = Sequelize;
+module.exports = Product;
