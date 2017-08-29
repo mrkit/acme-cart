@@ -4,11 +4,47 @@ body, h1 {
 }
 
 main {
-  width: 1000px;
+  width: 800px;
   margin: auto;
 }
 
 #headerText {
   border-bottom: 1px solid grey;
   padding-bottom: 10px;
+}
+
+ul {
+  width: 20em;
+  padding: 0;
+  float: left;
+}
+
+.product {
+  list-style: none;
+  border-style: groove;
+  border: 1px solid grey;
+  clear: both;
+  height: 25px;
+  padding-left: 2px;
+  padding-top: 1px;
+}
+
+.product button {
+  float: right;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid grey;
+  position: relative;
+  top: 2px;
+  right: 1px;
+  outline: none;
+}
+
+.product button:hover {
+  background-color: #e8e7e7;
+}
+
+.product button:active {
+  background-color: grey;
+  color: white;
 }

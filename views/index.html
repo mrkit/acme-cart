@@ -3,5 +3,11 @@
 
 {% block content %}
 
+<ul>
+{% for product in products %}
 
+  <li class='product'>{{products}}<button>Add to Cart</button></li>
+ 
+{% endfor %}
+</ul>
 {% endblock %}

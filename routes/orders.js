@@ -4,8 +4,14 @@ const models = require('../models').models;
 const Order = models.Order;
 
 router.get('/', (req, res, next) => {
-  console.log('THIS IS IT', id, 'BODYYY', body);
-  res.render('index');
+
+  return models.Product.findAll()
+  .then( results => {
+    console.log(results.product)
+    res.render('index', {
+      products: results
+    });
+  });
 });
 
 router.put('/:id', (req, res, next) => {
