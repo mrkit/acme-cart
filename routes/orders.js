@@ -4,12 +4,12 @@ const models = require('../models').models;
 const Order = models.Order;
 
 router.get('/', (req, res, next) => {
-
-  return models.Product.findAll()
+  let foo = ['tom']
+  models.Product.findAll()
   .then( results => {
-    console.log(results.product)
     res.render('index', {
-      products: results
+      products: results,
+      foo: foo
     });
   });
 });

@@ -6,8 +6,27 @@
 <ul>
 {% for product in products %}
 
-  <li class='product'>{{products}}<button>Add to Cart</button></li>
+  <li class='product'><span>{{product.dataValues.name}}</span><button>Add to Cart</button></li>
  
 {% endfor %}
 </ul>
+
+{% if foo %}
+  <table>
+    <thead><tr><th colspan="2">Cart</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>{{products[0].dataValues.name}}</td>
+        <td>{{products[1].dataValues.name}}</td>
+      </tr>
+      <tr>
+        <td>{{products[2].dataValues.name}}</td>
+        <td>{{products[3].dataValues.name}}</td>
+      </tr>
+    </tbody>
+  </table>
+{% else %}
+  I am false
+{% endif %}
+
 {% endblock %}

@@ -16,6 +16,7 @@ main {
 ul {
   width: 20em;
   padding: 0;
+  margin: 0;
   float: left;
 }
 
@@ -24,9 +25,13 @@ ul {
   border-style: groove;
   border: 1px solid grey;
   clear: both;
-  height: 25px;
-  padding-left: 2px;
-  padding-top: 1px;
+  height: 27px;
+}
+
+.product span {
+  position: relative;
+  top: 4px;
+  left: 5px;
 }
 
 .product button {
@@ -35,7 +40,7 @@ ul {
   border-radius: 10px;
   border: 1px solid grey;
   position: relative;
-  top: 2px;
+  top: 3px;
   right: 1px;
   outline: none;
 }
@@ -47,4 +52,21 @@ ul {
 .product button:active {
   background-color: grey;
   color: white;
+}
+
+table {
+  float: right;
+  height: 100%;
+  width: 300px;
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+
+th {
+  border: 1px solid grey;
+  
+}
+
+td{
+  border: 1px solid grey;
 }

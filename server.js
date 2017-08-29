@@ -32,7 +32,7 @@ app.listen(port, ()=> {
     .then( () => {
       //seed
       return Promise.all([
-        models.Product.create({ name: 'ArtiADFficial Rock'}),
+        models.Product.create({ name: 'Artificial Rock'}),
         models.Product.create({ name: 'Giant Rubber Band V1'}),
         models.Product.create({ name: 'Dehydrated Boulgers' }),
         models.Product.create({ name: 'Do-It-Yourself Tornado Kit'})
